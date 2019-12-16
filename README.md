@@ -1,10 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 # Instructions
 
-1 Run `npm install` to install all dependencies
-2 run `npm start` to run dev server on default port :3000
-3 Start Searching for your favorite Gif, the page will automatically render the results to you, no need to press enter !!!
+- Run `npm install` to install all dependencies
+- run `npm start` to run dev server on default port :3000
+- Start Searching for your favorite Gif, the page will automatically render the results to you, no need to press enter !!!
 
 ## Available Scripts
 
