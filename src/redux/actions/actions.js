@@ -1,12 +1,11 @@
 import ActionTypes from "../constants/ActionsTypes";
-
+const API = "wqmUbKlFSgVu8OkDO8C3uIJyW7baVW48";
+//this can be also be stored as process.env.REACT_APP_GIPHY_API_URL using local variables for security
 export const searchByTerm = term => dispatch => {
   dispatch({
     type: ActionTypes.GETTING_DATA
   });
-  fetch(
-    `http://api.giphy.com/v1/gifs/search?q=${term}&api_key=wqmUbKlFSgVu8OkDO8C3uIJyW7baVW48&limit=20`
-  )
+  fetch(`http://api.giphy.com/v1/gifs/search?q=${term}&api_key=${API}&limit=20`)
     .then(res => res.json())
     .then(data => {
       console.log(data);
